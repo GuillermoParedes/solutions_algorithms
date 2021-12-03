@@ -7,7 +7,7 @@ const ovejas = [
 ];
 
 export default function contarOvejas(ovejas) {
-  const regex = /(n|a)/gi;
+  const regex = /[n][a]/gi;
   return ovejas.filter(oveja => {
     if(oveja.color === 'rojo' && regex.test(oveja.name)) {
       return oveja;
